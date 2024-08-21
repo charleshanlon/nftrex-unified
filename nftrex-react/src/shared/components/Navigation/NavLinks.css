@@ -1,0 +1,131 @@
+.nav-links {
+  list-style: none;
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  background-color: #242424;
+  padding-left: 0.2rem;
+  border-radius: 1rem;
+}
+
+.nav-links li {
+  margin: 1rem;
+}
+
+.nav-links img {
+  position: relative;
+  top: 0.1rem;
+}
+
+.nav-links a {
+  border: 1px solid transparent;
+  color: #fff8e7;
+  background-color: #242424;
+  text-decoration: none;
+  margin: 0.75rem;
+}
+
+.nav-links img {
+  margin-bottom: 0.1rem;
+}
+
+.nav-links a:hover {
+  color: #fff8e7;
+}
+.nav-links a:active,
+.nav-links a.active {
+  color: #fff8e7;
+  border: #242424 1px solid;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.nav-links button {
+  cursor: pointer;
+  border: 1px solid #141414;
+  color: #141414;
+  background-color: #2a2a2a;
+  font: inherit;
+  font-weight: bold;
+}
+
+.nav-links button:hover:before {
+  width: 100%;
+}
+
+.nav-links a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width:0;
+  height: 0px;
+  background-color: #fff8e7;
+  transition: width 0.25s;
+}
+
+.nav-links a:hover:before {
+  width: 100%;
+}
+
+.nav-links button:focus {
+  outline: none;
+}
+
+
+.nav-links a:hover img {
+  filter: brightness(0);
+}
+
+
+.nav-links button:hover,
+.nav-links button:active {
+  background: #fff8e7;
+  color: #121212;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+
+  .nav-links a {
+    color: #fff8e7;
+    border: 0px solid #fff8e7;
+  }
+
+  .nav-links .connect {
+    border: solid 1.5px #2a2a2a;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  .nav-links .connect:hover {
+    color: #2a2a2a;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  .nav-links button {
+    color: #121212;
+    background-color: #ccff00;
+    border-radius: 10px;
+    text-transform: none;
+  }
+  
+  .nav-links button:hover,
+  .nav-links button:active {
+    background: #fff8e7;
+    color: #121212;
+  }
+}

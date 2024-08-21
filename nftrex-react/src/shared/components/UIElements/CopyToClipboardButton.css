@@ -1,0 +1,16 @@
+.btncopy button {
+  display: flex;
+  color: #444444;
+  background-color: #242424;
+  border-radius: 1px;
+  width: 15%;
+  justify-content: left;
+  margin-left: 5%;
+}
+
+.btncopy button:hover {
+  display: flex;
+  color: #fff8e7;
+  background-color: #242424;
+  border-radius: 1px; 
+}

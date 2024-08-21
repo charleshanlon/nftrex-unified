@@ -1,0 +1,239 @@
+.home-item {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.load-container {
+  margin-bottom: 30rem;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-width: 15rem;
+  min-height: 30rem;
+}
+
+.left-section h4 {
+  color: #fff8e7;
+  margin: 0.25rem;
+  font-size: small;
+  text-align: center;
+}
+
+.box-1 {
+  position: relative;
+  min-height: 20%;
+  background-color: #fff8e7;
+  border: 1.5px solid #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccff00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s;
+}
+
+.featured-text {
+  display: flex;
+  align-items: center; /* Vertically center the SVG and the text */
+  justify-content: center; /* Horizontally center the SVG and the text */
+  z-index: 2; /* Ensure it's above the background image */
+  position: relative; /* This ensures that z-index is applied */
+}
+
+.featured-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Position the image absolutely to fill the entire box-1 */
+.featured-project img:not(.circle-image) {
+  position: absolute; /* Position the image absolutely within box-1 */
+  width: 100%; /* Make it cover the entire width of box-1 */
+  height: 100%; /* Make it cover the entire height of box-1 */
+  object-fit: cover; /* Ensure the image covers the entire box without distortion */
+  filter: blur(2px); /* Adjust the value as needed */
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+}
+
+.circle-image {
+    width: 25px; /* Adjust as needed */
+    height: 25px;
+    z-index: 1; /* Ensure the image is above the background */
+    margin-right: 0.5rem;
+}
+
+/* Center the text within the featured-project div */
+.featured-text h4 {
+  color: #141414;
+  z-index: 2; /* Ensure the h4 is above the image */
+  font-size: large;
+  font-weight: 1000;
+  position: relative; /* This ensures that z-index is applied */
+}
+
+.box-1:hover {
+  background-color: #fff8e7;
+}
+
+.box-1:hover img{
+  filter: blur(5px);
+}
+
+.box-1:hover .featured-project svg{
+  filter: none;
+  scale: 1.8;
+}
+
+
+.box-2 {
+  position: relative;
+  min-height: 20%;
+  background-color: #141414;
+  border: 1.5px solid #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s;
+}
+
+.box-2 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+}
+
+.news-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2; /* Ensure it's above the background image */
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+}
+
+.box-2 h5 {
+  color: #fff8e7;
+  margin: .5rem;
+  margin-bottom: 1rem;
+}
+
+.box-2 h4 {
+  margin: 0.5rem;
+  color: #fff8e7;
+  font-size: large;
+}
+
+.box-2:hover {
+  
+  background-color: #2a2a2a;
+  border: 1.5px solid #ccff00;
+}
+
+
+.box-3 {
+  background-color: #141414;
+  border: 1.5px solid #2a2a2a;
+  border-radius: 10px;
+}
+
+.right-box { /* 3 times the height of a box plus 2 times the margin */
+  
+  margin-left: 1rem; /* adjust for desired spacing */ 
+  margin-right: 1rem;
+}
+
+.right-box h4{ /* 3 times the height of a box plus 2 times the margin */
+  color: #fff8e7;
+  text-align: center;
+  margin: 0.25rem;
+  font-size: small;
+}
+
+.feature-list {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: small;
+  color: #fff8e7;
+}
+
+.feature-list li > svg {
+  margin-right: 0.5rem;
+}
+
+.recent-lotto {
+  margin: 0;
+  margin-bottom: -2rem;
+  padding: 0;
+}
+
+.faq {
+  color: #fff8e7;
+}
+.faq h4 {
+  color: #fff8e7;
+  margin-left: 1rem;
+}
+
+.full-box-link {
+  display: block;
+  text-decoration: none;
+  color: inherit; /* This will ensure the text color remains unchanged */
+}
+
+.accordian {
+  color: #fff8e7;
+  background-color: #141414;
+}
+
+.accordian svg {
+  color: #fff8e7;
+  background-color: #141414;
+}
+
+@media (min-width: 768px) {
+  .right-box { /* 3 times the height of a box plus 2 times the margin */
+    width: 50%; /* or whatever width you want */
+    
+  }
+  .left-section {
+    width: 45%;
+    padding-left: 1rem;
+    margin-bottom: 0;
+  }
+  .right-box { /* 3 times the height of a box plus 2 times the margin */
+    max-width: 40rem;
+    margin-left: 1rem; /* adjust for desired spacing */ 
+    margin-right: 1rem;
+  }
+}

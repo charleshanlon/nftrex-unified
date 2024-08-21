@@ -1,0 +1,31 @@
+.charts {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 99%;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0.5rem;
+    border: 1.5px #2a2a2a solid;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    background: #121212;
+    margin-bottom: 2rem;
+  }
+
+  .charts-volume {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 99%;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0.5rem;
+    border: 1.5px #2a2a2a solid;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+  }
